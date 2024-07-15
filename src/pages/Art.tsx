@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, Modal, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import data from "../storage/art.json";
 import { Item } from '../models/Item';
 
 const Art: React.FC = () => {
   const [items, setItems] = useState<Item[]>([]);
+  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setItems(data);
   }, []);
+
+  const handleOpenModal = (item: Item) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedItem(null);
+    setIsModalOpen(false);
+  };
 
   return (
     <Box sx={{ p: 2 }}>
@@ -24,7 +37,9 @@ const Art: React.FC = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                cursor: 'pointer',
               }}
+              onClick={() => handleOpenModal(item)}
             >
               <img
                 src={item.link}
@@ -43,6 +58,43 @@ const Art: React.FC = () => {
           </Grid>
         ))}
       </Grid>
+      <Modal
+        open={isModalOpen}
+        onClose={handleCloseModal}
+        sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      >
+        <Box
+          sx={{
+            position: 'relative',
+            bgcolor: 'background.paper',
+            boxShadow: 24,
+            p: 4,
+            borderRadius: '4px',
+            maxWidth: '90%',
+            maxHeight: '90%',
+            overflow: 'auto',
+          }}
+        >
+          <IconButton
+            onClick={handleCloseModal}
+            sx={{ position: 'absolute', top: 8, right: 8 }}
+          >
+            <CloseIcon />
+          </IconButton>
+          {selectedItem && (
+            <img
+              src={selectedItem.link}
+              alt={selectedItem.title}
+              style={{ width: '100%', height: 'auto', borderRadius: '4px' }}
+            />
+          )}
+          {selectedItem && (
+            <Typography variant="h6" sx={{ textAlign: 'center', mt: 2, fontFamily: 'Jura' }}>
+              {selectedItem.title}
+            </Typography>
+          )}
+        </Box>
+      </Modal>
     </Box>
   );
 };
