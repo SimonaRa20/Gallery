@@ -1,0 +1,79 @@
+[
+    {
+        "nr": 1,
+        "title": "Duomenu strukturu modulio darbai",
+        "link": "https://github.com/SimonaRa20/P175B014-Duomenu-Strukturos",
+        "description": "In this repository, you can find all projects, writing works of them of Duomenu strukturos module. Projects. 1 laboratory work (LinkedList, 3rd OP laboratory changed in Java, Stack and Queue implementation). 2 laboratory work (AVL and BST relizations). 3 laboratory work (Bag table using in data structure). Individual project (Implementation of Deque using circular array data structure)",
+        "language": "Java"
+    },
+    {
+        "nr": 2,
+        "title": "Meetings-schedule",
+        "link": "https://github.com/SimonaRa20/Meetings-schedule",
+        "description": "Visma internship task solution",
+        "language": "C#"
+    },
+    {
+        "nr": 3,
+        "title": "Devbridge internship practical selection task",
+        "link": "https://github.com/SimonaRa20/Devbridge_task",
+        "description": "You were given an input of many strings, that contain numbers and letters (see below). Each line is a single string and the number of lines is unlimited. Your task is to write a Java program that reads .txt files with provided input, iterates over each line and prints lines which contain at least one number that is equal to or higher than 10. Your input: asf5g5g66 gh5n0rh5e d9d10d0 oo9etyd1c3dfg4 abc999l0j dsf1sf5sd9l0 l0l02Ol0l asf5g5g6O ee8OidXXI0l d9dI0dl0. Output: asf5g5g66 d9d10d0 abc999l0j",
+        "language": "Java"
+    },
+    {
+        "nr": 4,
+        "title": "Shortest path search",
+        "link": "https://github.com/SimonaRa20/Shortest-path-search",
+        "description": "Nortal 2022 internship task",
+        "language": "C#"
+    },
+    {
+        "nr": 5,
+        "title": "Skaitiniai metodai ir algoritmai",
+        "link": "https://github.com/SimonaRa20/Skaitiniai-metodai-ir-algoritmai",
+        "description": "Skaitiniai metodai ir algoritmai modulio laboratoriniai darbai.",
+        "language": "Python"
+    },
+    {
+        "nr": 6,
+        "title": "Kompiuteriniu tinklu projektas",
+        "link": "https://github.com/SimonaRa20/T120B145-IT-projektas",
+        "description": "Kompiuteriu tinklu IT projektas. Buvo keičiamas šablonas pagal užduotį. Reikėjo sukurti lažybų puslapį.",
+        "language": "PHP"
+    },
+    {
+        "nr": 7,
+        "title": "Bootcamp tasks",
+        "link": "https://github.com/SimonaRa20/PracticeTasks",
+        "description": "Homework tasks from bootcamp Microsoft technologies and .NET.",
+        "language": "C#, React TS"
+    },
+    {
+        "nr": 8,
+        "title": "Questionnaire",
+        "link": "https://github.com/SimonaRa20/questionnaire",
+        "description": "Questionnaire website. This application is react typescript project. Deployed in github pages.",
+        "language": "React TS"
+    },
+    {
+        "nr": 9,
+        "title": "Budget Management System",
+        "link": "https://github.com/SimonaRa20/BudgetManagementSystem",
+        "description": "Web Application Design semester work (T120B165). Have Wiki pages documentation.",
+        "language": "C#, React TS"
+    },
+    {
+        "nr": 10,
+        "title": "Junior Programmer tasks",
+        "link": "https://github.com/SimonaRa20/Internship",
+        "description": "4 different tasks.",
+        "language": "C#, React TS"
+    },
+    {
+        "nr": 11,
+        "title": "WPF app",
+        "link": "https://github.com/SimonaRa20/WPFApp",
+        "description": "Užduoties aprašymas. Formoje vartotojas gali nurodyti kintamą kiekį thread (atšakos) (Nuo 2 iki 15, kiekis negali būti didesnis ar mažesnis). Išrinkus kiekį ir paspaudus start mygtuką, kiekvienas thread turi atsitiktiniu laiko intervalu (0,5-2 sekundžių) generuoti 5-10 (atsitiktinai) simbolių ilgio eilutę. Turi būti įsimenamos/rodomos 20 paskutinių sugeneruotų duomenų, kurie išvedami į formos ListView kontrolą. ListView turi tokias kolonas – Thread ID(numeris atšakos, kur numeruojama nuo 1), sugeneruota eilutė. Visi atšakos generuoti duomenis rašomi į access duomenų failą(mdb) (galite naudoti ir SQL serverį, jie turite tokią galimybę), lentelę - kur laukai yra ID(autonumber), ThreadID, Time(laikas sugeneravimo), Data(eilutė). Paspaudus Stop mygtuką darbas stabdomas ir thread išjungiamos. Naudojamos technologijos: C#, ADO.NET, MDAC, winformos (jei galite, naudokite WPF)..",
+        "language": "C#, WPF"
+    }
+  ]

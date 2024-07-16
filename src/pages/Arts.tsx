@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { Box, Grid, Typography, Modal, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import data from "../storage/art.json";
-import { Item } from '../models/Item';
+import { Art } from '../models/Art';
 
-const Art: React.FC = () => {
-  const [items, setItems] = useState<Item[]>([]);
-  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+const Arts: React.FC = () => {
+  const [items, setItems] = useState<Art[]>([]);
+  const [selectedItem, setSelectedItem] = useState<Art | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setItems(data);
   }, []);
 
-  const handleOpenModal = (item: Item) => {
+  const handleOpenModal = (item: Art) => {
     setSelectedItem(item);
     setIsModalOpen(true);
   };
@@ -99,4 +99,4 @@ const Art: React.FC = () => {
   );
 };
 
-export default Art;
+export default Arts;
